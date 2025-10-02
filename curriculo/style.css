@@ -12,4 +12,10 @@ body {
     /*Mudar a cor da fonte */
     color: #333;
     line-height: 1.6;
+    padding: 20px;
 : }
+
+.container {
+    max-width: 800px;
+    background: white;
+    margin: auto;
