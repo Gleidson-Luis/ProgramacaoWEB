@@ -1,25 +1,69 @@
-/* Reset de CSS */ 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    /* Mudar cor de fundo */
-    background-color: #9d0e0e;
-    /*Mudar a cor da fonte */
-    color: #2b0e9d;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
     line-height: 1.6;
     padding: 20px;
-: }
-
-.container {
+  }
+  
+  .container {
     max-width: 800px;
     background: white;
     margin: auto;
-}
-header {
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  header {
     text-align: center;
-}
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2em;
+    color: #222;
+  }
+  
+  header p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  section {
+    margin-bottom: 25px;
+  }
+  
+  section h2 {
+    color: #005a8d;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+  }
+  
+  .item {
+    margin-bottom: 15px;
+  }
+  
+  .item h3 {
+    font-size: 1.1em;
+    color: #333;
+  }
+  
+  .item span {
+    font-size: 0.9em;
+    color: #888;
+    display: none;
+  }
+  
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+  
