@@ -1,0 +1,41 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+}
+
+aside {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: aqua
+    ;
+}
+
+aside ul {
+    list-style: none;
+}    
+
+aside a {  
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+    font-family: Arial, sans-serif;
+    }
+
+aside a:hover {
+    background-color: aqua;
+}
+
+main {
+    margin-left: 250px;
+}   
