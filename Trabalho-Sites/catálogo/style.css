@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a6f);
+    color: white;
+    padding: 2rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* Busca */
+.busca-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#campoBusca {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    width: 300px;
+    font-size: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#campoBusca:focus {
+    outline: none;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Carrinho */
+.carrinho-badge {
+    background: white;
+    color: #ff6b6b;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contador-carrinho {
+    background: #ff6b6b;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+}
+
+/* Container Principal */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+/* Mensagem de Produto Adicionado */
+.mensagem-add {
+    background: #4caf50;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    z-index: 1000;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    display: none;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Grid de Produtos */
+.produtos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.produto-card {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.produto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 107, 107, 0.2);
+}
+
+.produto-icon {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.produto-card h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.produto-preco {
+    color: #ff6b6b;
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.produto-descricao {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.btn-adicionar {
+    width: 100%;
+    background: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-adicionar:hover {
+    background: #ee5a6f;
+    transform: scale(1.05);
+}
+
+/* Seção Carrinho */
+.carrinho-section {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 3rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.carrinho-section h2 {
+    color: #ff6b6b;
+    margin-bottom: 1rem;
+}
+
+.carrinho-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.btn-limpar {
+    background: #666;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-limpar:hover {
+    background: #555;
+}
+
+.mensagem-vazio {
+    color: #999;
+    font-style: italic;
+}
+
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #campoBusca {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+}

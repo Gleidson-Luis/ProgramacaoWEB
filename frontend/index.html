@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin - Gestão de Tarefas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="logo">AdminTasks</div>
+      <nav>
+        <a href="#" class="active">Tarefas</a>
+        <a href="#">Relatórios</a>
+        <a href="#">Configurações</a>
+      </nav>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <h1>Tarefas</h1>
+        <button id="btnNovaTarefa">+ Nova tarefa</button>
+      </header>
+
+      <section class="filters">
+        <div>
+          <label>Status:</label>
+          <select id="filtroStatus">
+            <option value="">Todos</option>
+            <option>Pendente</option>
+            <option>Em andamento</option>
+            <option>Concluída</option>
+          </select>
+        </div>
+        <div>
+          <label>Prioridade:</label>
+          <select id="filtroPrioridade">
+            <option value="">Todas</option>
+            <option>Baixa</option>
+            <option>Média</option>
+            <option>Alta</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Título</th>
+              <th>Responsável</th>
+              <th>Prioridade</th>
+              <th>Status</th>
+              <th>Data limite</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tbodyTarefas">
+            <!-- Linhas preenchidas via JS -->
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal">
+      <h2 id="modalTitulo">Nova tarefa</h2>
+      <form id="formTarefa">
+        <input type="hidden" id="taskId" />
+
+        <div class="form-group">
+          <label for="title">Título</label>
+          <input type="text" id="title" required />
+        </div>
+
+        <div class="form-group">
+          <label for="description">Descrição</label>
+          <textarea id="description"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="responsible">Responsável</label>
+          <input type="text" id="responsible" />
+        </div>
+
+        <div class="form-group-inline">
+          <div>
+            <label for="priority">Prioridade</label>
+            <select id="priority">
+              <option>Baixa</option>
+              <option selected>Média</option>
+              <option>Alta</option>
+            </select>
+          </div>
+          <div>
+            <label for="status">Status</label>
+            <select id="status">
+              <option>Pendente</option>
+              <option>Em andamento</option>
+              <option>Concluída</option>
+            </select>
+          </div>
+          <div>
+            <label for="due_date">Data limite</label>
+            <input type="date" id="due_date" />
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" id="btnCancelar">Cancelar</button>
+          <button type="submit" id="btnSalvar">Salvar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

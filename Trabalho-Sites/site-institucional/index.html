@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoVida Energia Limpa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">🌱 EcoVida</div>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio">
+        <h1>Energia Limpa para um Futuro Sustentável</h1>
+        <p>Transformando o mundo com soluções em energia renovável</p>
+        <button class="btn" onclick="scrollToSection('#servicos')">Conheça Nossos Serviços</button>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre a EcoVida</h2>
+        <p>A EcoVida é uma empresa pioneira em soluções de energia limpa e sustentável. 
+           Fundada em 2020, nossa missão é contribuir para um planeta mais verde através 
+           da implementação de tecnologias renováveis acessíveis e eficientes.</p>
+        
+        <h3 style="color: #27ae60; margin-top: 2rem; margin-bottom: 1rem;">Nossos Valores</h3>
+        <div class="valores">
+            <div class="valor-item">
+                <h3>🌍 Sustentabilidade</h3>
+                <p>Compromisso com práticas que preservam o meio ambiente</p>
+            </div>
+            <div class="valor-item">
+                <h3>💡 Inovação</h3>
+                <p>Soluções tecnológicas de ponta em energia renovável</p>
+            </div>
+            <div class="valor-item">
+                <h3>🤝 Transparência</h3>
+                <p>Relacionamento honesto e claro com nossos clientes</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <div class="servicos-grid">
+            <div class="card">
+                <h3>☀️ Energia Solar</h3>
+                <p>Instalação completa de sistemas fotovoltaicos residenciais e comerciais. 
+                   Economia de até 95% na conta de luz com tecnologia de ponta.</p>
+            </div>
+            <div class="card">
+                <h3>💨 Energia Eólica</h3>
+                <p>Turbinas eólicas de pequeno e médio porte para geração de energia limpa. 
+                   Ideal para propriedades rurais e empresas.</p>
+            </div>
+            <div class="card">
+                <h3>🔋 Armazenamento</h3>
+                <p>Sistemas de baterias para armazenamento de energia, garantindo 
+                   fornecimento contínuo mesmo sem sol ou vento.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <div class="mensagem-sucesso" id="mensagemSucesso">
+            ✓ Mensagem enviada com sucesso! Entraremos em contato em breve.
+        </div>
+        <form id="formContato">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar Mensagem</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EcoVida Energia Limpa. Todos os direitos reservados.</p>
+        <div class="redes-sociais">
+            <a href="#" title="Facebook">Facebook</a>
+            <a href="#" title="Instagram">Instagram</a>
+            <a href="#" title="LinkedIn">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>

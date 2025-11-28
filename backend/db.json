@@ -1,0 +1,32 @@
+{
+  "tasks": [
+    {
+      "id": "2",
+      "title": "Criar documentação",
+      "description": "Documentar o CRUD de tarefas.",
+      "priority": "Média",
+      "status": "Pendente",
+      "responsible": "Maria",
+      "due_date": "2025-11-25",
+      "created_at": "2025-11-11T14:30:00Z"
+    },
+    {
+      "id": "2ada",
+      "title": "dsdsds",
+      "description": "dsdsdsds",
+      "responsible": "ddsds",
+      "priority": "Média",
+      "status": "Pendente",
+      "due_date": "2025-11-20"
+    },
+    {
+      "id": "6fee",
+      "title": "fgg",
+      "description": "fdg",
+      "responsible": "fdg",
+      "priority": "Média",
+      "status": "Em andamento",
+      "due_date": "2025-11-19"
+    }
+  ]
+}
