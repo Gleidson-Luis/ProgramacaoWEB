@@ -10,9 +10,24 @@ function abrirModal(){
 }
 
 function fecharModal(){
-
     modalTarefa.classList.remove("show");
 }
 
 btnNovaTarefa.addEventListener("click", abrirModal);
 btnCancelar.addEventListener("click", fecharModal);
+
+tarefas = [];
+
+async function carregarTasks(){
+    const resultado = await fetch(API_URL);
+    const dados = await resultado.json();
+    tarefas = dados;
+    console.log(tarefas);
+}
+
+function renderizarTabela(){
+    tarefas.foreach(tarefa => {console.log(tarefa.title)});
+}
+
+carregarTasks();
+
